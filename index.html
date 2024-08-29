@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Tools Explorer</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <div id="window" class="window">
+        <div class="title-bar">
+            <div class="title-bar-text">AI Tools Explorer</div>
+            <div class="title-bar-controls">
+                <button aria-label="Minimize">_</button>
+                <button aria-label="Maximize">□</button>
+                <button aria-label="Close">X</button>
+            </div>
+        </div>
+        <div class="window-body">
+            <div class="language-selector">
+                <button id="en-btn">English</button>
+                <button id="ko-btn">한국어</button>
+            </div>
+            <h1 id="main-title">AI Tools Explorer</h1>
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Search AI tools...">
+            </div>
+            <div class="category-filter">
+                <select id="categorySelect">
+                    <option value="">All Categories</option>
+                </select>
+            </div>
+            <div id="toolsGrid" class="tools-grid"></div>
+        </div>
+    </div>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
